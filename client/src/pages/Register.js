@@ -3,6 +3,7 @@ import { Row, Col, Form, Input } from "antd";
 import { Link } from "react-router-dom";
 import {useDispatch , useSelector} from 'react-redux'
 import { userRegister } from "../redux/actions/userActions";
+import BG from '../Image/bg1.png'
 import AOS from 'aos';
 import Spinner from '../components/Spinner';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -21,12 +22,15 @@ function Register() {
       {loading && (<Spinner />)}
       <Row gutter={16} className="d-flex align-items-center">
         <Col lg={16} style={{ position: "relative" }}>
+        <h1 className="login-logo"
+>S T A R T - E V</h1>
           <img 
            className='w-100'
            data-aos='slide-left'
            data-aos-duration='1500'
-          src="https://img.redbull.com/images/c_fill,w_1200,h_630,g_auto,f_auto,q_auto/redbullcom/2020/12/3/c1zjbxauahxsq0vqb09s/the-old-world-visual" />
-          <h1 className="login-logo">D I R T C L  M B</h1>
+           style={{opacity:0.79}}
+         src={BG} />
+         
         </Col>
         <Col lg={8} className="text-left p-5">
           <Form layout="vertical" className="login-form p-5" onFinish={onFinish}>

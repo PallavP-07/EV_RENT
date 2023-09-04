@@ -4,7 +4,7 @@ body {
   font-family: 'Montserrat', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(243, 239, 239);
+  background-color: rgb(116, 116, 116);
 }
 body , html{
   overflow-x: hidden !important;
@@ -28,7 +28,7 @@ code {
 h1{
   font-size: 30px;
   font-weight: bold;
-  color : orangered;
+  color : rgb(69, 69, 69);
 }
 p{
   margin: 5px !important;
@@ -37,11 +37,12 @@ p{
 }
 .btn1{
   box-shadow: none !important;
-  background-color : white !important;
-  color: orangered !important;
-  border: 1px solid orangered !important;
+  background-color : rgb(155, 155, 155) !important;
+  color: rgb(24, 23, 23) !important;
+  border: 1px solid rgb(79, 79, 79) !important;
   padding: 5px 15px !important;
   outline: none !important;
+  border-radius: 10px;
 }
 .bt1:focus{
   border: none;
@@ -74,9 +75,11 @@ button{
 /* this is just for ui purpose , no functionality is related */
 .car{
   border-radius: 5px;
-  margin-top: 100px;
+  margin-top: 70px;
+  padding: 20px;
   height: 160px;
   transition: 0.3s;
+  padding: 20px;
 }
 .car:hover{
   height :220px;
@@ -88,7 +91,7 @@ button{
 
 }
 .carimg{
-  height:180px;
+  height:100px;
   width: auto;
   border-radius: 5px;
   transform: translateY(-50px);
@@ -99,18 +102,21 @@ button{
   transition: 0.3s;
 }
 .login{
-  background-color: black;
-  padding-top: 50px;
+  background-color: rgb(182, 200, 203);
+  padding-top: 20px;
   min-height: 100vh;
 }
-.login label , .login h1{
+.login label {
   color: white !important;
   opacity: 0.6;
   position: center;
   
 }
+.login h1{
+  color: black;
+}
 .login-form{
-  background-color: #1F1F1F;
+  background-color: #616161;
 }
 .login-form input{
   background-color: #333333 !important;
@@ -131,8 +137,8 @@ button{
 
 }
 .login a{
-  color: white !important;
-  opacity: 0.5;
+  color: rgb(0, 0, 0) !important;
+  /* opacity: 0.5; */
 }
 
 .carimg2{
@@ -146,5 +152,5 @@ svg{
   width : 20px !important;
 }
 a{
-  color: orangered !important;
+  color: rgb(0, 0, 0) !important;
 }

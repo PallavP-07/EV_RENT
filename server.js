@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 5000
-const dbConnection = require('./db')
+const {connectDB} =require('./db')
 app.use(express.json())
 
 app.use('/api/cars/' , require('./routes/bikesRoute'))
@@ -10,7 +10,7 @@ app.use('/api/bookings/' , require('./routes/bookingsRoute'))
 
 
 const path = require('path')
-
+connectDB()
 if(process.env.NODE_ENV==='production')
 {
 
